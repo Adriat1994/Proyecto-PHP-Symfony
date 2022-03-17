@@ -1,0 +1,23 @@
+{% extends './base.html.twig' %}
+{% block body %}
+
+	<h2>Mis solicitudes
+	</h2>
+	<div class="row">
+
+		{% for solicitud in solicitudes %}
+			<div class="col-md-4">
+				<div class="card" style="width: 18rem">
+					<div class="card-body">
+						<img src={{solicitud.imagen}} class="card-test">					
+						<p class="card-test">{{solicitud.descripcion}}</p>						
+					</div>
+				</div>
+			</div>
+
+
+		{% endfor %}
+
+	</div>
+
+{% endblock %}

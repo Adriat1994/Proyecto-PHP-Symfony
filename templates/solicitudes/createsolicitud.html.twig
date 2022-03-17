@@ -1,0 +1,17 @@
+{% extends './base.html.twig' %}
+{% block body %}
+
+	<div class="col-md-8 offset-md-2 row align-items-center">
+	<div class="card col-6" style="width: 30rem;">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6WJtzjyicwkmFf2gOQ2WA7FDgSJhw4cSg3w&usqp=CAU" class="card-img-top" alt="Chuck Norris dice Nope">
+		<div class="card-body">
+			<h5 class="card-title">Lo que Chuck Norris da, Chuck Norris lo quita</h5>
+			{{form_start(solicitudForm)}}
+			{{form_widget(solicitudForm)}}	
+			<button class="btn btn-primary" type="submit">Crear Solicitud</button>
+			{{form_end(solicitudForm)}}		
+		</div>
+	</div>
+</div>
+
+{% endblock %}

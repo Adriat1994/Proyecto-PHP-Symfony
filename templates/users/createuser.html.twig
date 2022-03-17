@@ -1,0 +1,10 @@
+{% extends './base.html.twig' %}
+
+{% block body %}
+    {{form_start(userForm)}}
+    {{form_widget(userForm)}}
+    <button class="btn btn-lg btn-primary" type="submit">Registrar</button>
+    {{form_end(userForm)}}
+
+
+{% endblock %}
